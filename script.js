@@ -1,15 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
     const tasks = [
-        { name: 'かおを あらう', image: './images/face_wash.png', completed: false },
-        { name: 'きがえる', image: './images/clothes.png', completed: false },
-        { name: 'ごはんを たべる', image: './images/eat.png', completed: false },
-        { name: 'はを みがく', image: './images/toothbrush.png', completed: false },
-        { name: 'おんどを はかる', image: './images/thermometer.png', completed: false },
-        { name: 'おんどを きろくする', image: './images/record.png', completed: false },
-        { name: 'もちものを かくにんする', image: './images/bag_check.png', completed: false },
-        { name: 'すいとうを もつ', image: './images/water_bottle.png', completed: false },
-        { name: 'トイレに いく', image: './images/toilet.png', completed: false },
-        { name: 'かさを もつか かくにん', image: './images/umbrella.png', completed: false }
+        { name: 'かおを あらう', image: './images/face_wash.svg', completed: false },
+        { name: 'きがえる', image: './images/clothes.svg', completed: false },
+        { name: 'ごはんを たべる', image: './images/eat.svg', completed: false },
+        { name: 'はを みがく', image: './images/toothbrush.svg', completed: false },
+        { name: 'おんどを はかる', image: './images/thermometer.svg', completed: false },
+        { name: 'おんどを きろくする', image: './images/record.svg', completed: false },
+        { name: 'もちものを かくにんする', image: './images/bag_check.svg', completed: false },
+        { name: 'すいとうを もつ', image: './images/water_bottle.svg', completed: false },
+        { name: 'トイレに いく', image: './images/toilet.svg', completed: false },
+        { name: 'かさを もつか かくにん', image: './images/umbrella.svg', completed: false }
     ];
 
     const taskList = document.getElementById('task-list');
