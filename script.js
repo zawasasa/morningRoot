@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const tasks = [
         { name: 'かおを あらう', image: 'images/face_wash.png', completed: false },
-        { name: 'きがえる', image: 'images/clothes.svg', completed: false },
+        { name: 'きがえる', image: 'images/clothes.png', completed: false },
         { name: 'ごはんを たべる', image: 'images/eat.png', completed: false },
         { name: 'はを みがく', image: 'images/toothbrush.png', completed: false },
         { name: 'おんどを はかる', image: 'images/thermometer.png', completed: false },
