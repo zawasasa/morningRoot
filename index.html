@@ -8,14 +8,71 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>あさのじゅんびリスト</h1>
-    <ul id="task-list">
-        <!-- タスクはJavaScriptで追加します -->
-    </ul>
+    <div class="container">
+        <div class="cat-board">
+            <svg width="500" height="600" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
+                <!-- 猫の体の影 -->
+                <ellipse cx="250" cy="350" rx="200" ry="180" fill="#e8a5a5" opacity="0.3"/>
+                
+                <!-- 猫の体 -->
+                <ellipse cx="250" cy="320" rx="180" ry="160" fill="#ffb6c1" stroke="#ff8fab" stroke-width="3"/>
+                
+                <!-- 猫の足 -->
+                <ellipse cx="180" cy="450" rx="25" ry="15" fill="#ffb6c1" stroke="#ff8fab" stroke-width="2"/>
+                <ellipse cx="220" cy="450" rx="25" ry="15" fill="#ffb6c1" stroke="#ff8fab" stroke-width="2"/>
+                <ellipse cx="280" cy="450" rx="25" ry="15" fill="#ffb6c1" stroke="#ff8fab" stroke-width="2"/>
+                <ellipse cx="320" cy="450" rx="25" ry="15" fill="#ffb6c1" stroke="#ff8fab" stroke-width="2"/>
+                
+                <!-- 猫の頭 -->
+                <circle cx="250" cy="200" r="120" fill="#ffb6c1" stroke="#ff8fab" stroke-width="3"/>
+                
+                <!-- 猫の耳 -->
+                <path d="M 180 120 L 160 80 L 200 100 Z" fill="#ffb6c1" stroke="#ff8fab" stroke-width="2"/>
+                <path d="M 320 120 L 340 80 L 300 100 Z" fill="#ffb6c1" stroke="#ff8fab" stroke-width="2"/>
+                
+                <!-- 耳の内側 -->
+                <path d="M 180 120 L 170 90 L 190 105 Z" fill="#ff8fab"/>
+                <path d="M 320 120 L 330 90 L 310 105 Z" fill="#ff8fab"/>
+                
+                <!-- 猫の目 -->
+                <ellipse cx="220" cy="180" rx="15" ry="20" fill="#333"/>
+                <ellipse cx="280" cy="180" rx="15" ry="20" fill="#333"/>
+                <ellipse cx="218" cy="175" rx="5" ry="8" fill="#fff"/>
+                <ellipse cx="278" cy="175" rx="5" ry="8" fill="#fff"/>
+                
+                <!-- 猫の鼻 -->
+                <ellipse cx="250" cy="200" rx="8" ry="5" fill="#ff69b4"/>
+                
+                <!-- 猫の口 -->
+                <path d="M 240 210 Q 250 220 260 210" stroke="#333" stroke-width="2" fill="none"/>
+                
+                <!-- 猫の頬 -->
+                <circle cx="200" cy="210" r="15" fill="#ffb6c1" opacity="0.6"/>
+                <circle cx="300" cy="210" r="15" fill="#ffb6c1" opacity="0.6"/>
+                
+                <!-- 猫のヒゲ -->
+                <line x1="180" y1="200" x2="150" y2="195" stroke="#333" stroke-width="1.5"/>
+                <line x1="180" y1="205" x2="150" y2="205" stroke="#333" stroke-width="1.5"/>
+                <line x1="180" y1="210" x2="150" y2="215" stroke="#333" stroke-width="1.5"/>
+                
+                <line x1="320" y1="200" x2="350" y2="195" stroke="#333" stroke-width="1.5"/>
+                <line x1="320" y1="205" x2="350" y2="205" stroke="#333" stroke-width="1.5"/>
+                <line x1="320" y1="210" x2="350" y2="215" stroke="#333" stroke-width="1.5"/>
+            </svg>
+            <div class="cat-content">
+                <h1>あさのじゅんびリスト</h1>
+                <ul id="task-list">
+                    <!-- タスクはJavaScriptで追加します -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    
     <div id="congrats-message" class="hidden">
         <h2>ぜんぶできたね！すごい！</h2>
         <canvas id="confetti-canvas"></canvas>
     </div>
+    
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 </body>
